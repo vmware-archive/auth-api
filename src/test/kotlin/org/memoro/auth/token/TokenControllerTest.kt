@@ -1,9 +1,10 @@
-package org.memoro.auth
+package org.memoro.auth.token
 
 import org.hamcrest.Matchers.`is`
 import org.joda.time.DateTime
 import org.joda.time.format.DateTimeFormat
 import org.junit.Test
+import org.memoro.auth.timeutilities.FakeTimeSource
 import org.springframework.test.web.servlet.MockMvc
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath

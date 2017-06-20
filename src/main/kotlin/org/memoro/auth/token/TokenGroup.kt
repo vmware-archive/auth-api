@@ -1,4 +1,4 @@
-package org.memoro.auth
+package org.memoro.auth.token
 
 import java.util.*
 

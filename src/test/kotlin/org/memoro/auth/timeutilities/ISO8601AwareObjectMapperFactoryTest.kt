@@ -1,8 +1,7 @@
-package org.memoro.auth
+package org.memoro.auth.timeutilities
 
 import org.assertj.core.api.Assertions.assertThat
 import org.joda.time.DateTime
-
 import org.junit.Test
 import java.util.*
 
@@ -22,4 +21,4 @@ class ISO8601AwareObjectMapperFactoryTest {
     }
 }
 
-private data class TestObject (val date: Date)
+private data class TestObject(val date: Date)

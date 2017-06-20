@@ -1,4 +1,4 @@
-package org.memoro.auth
+package org.memoro.auth.timeutilities
 
 class RealTimeSource: TimeSource {
     override fun getDateTime(): org.joda.time.DateTime {
