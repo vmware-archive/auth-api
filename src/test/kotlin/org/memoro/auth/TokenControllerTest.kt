@@ -17,7 +17,7 @@ class TokenControllerTest {
         val date = DateTime()
         val fakeTimeSource = FakeTimeSource(date)
         val accountController = TokenController(fakeTimeSource)
-        val dateToString = DateTimeFormat.forPattern("yyyy-MM-dd'T'HH:mm:ss.SSSZ").print(date)
+        val dateToString = DateTimeFormat.forPattern("yyyy-MM-dd'T'HH:mm:ssZ").print(date)
         mockMvc = standaloneSetup(accountController).build()
 
         val result = mockMvc?.perform(post("/token"))
